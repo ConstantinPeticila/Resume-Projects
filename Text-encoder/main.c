@@ -1,4 +1,4 @@
-//Peticila Constantin 311 cb tema3
+//Peticila Constantin 311CB 
 	#include<stdio.h>
 	#include<stdlib.h>
 	#include<string.h>
@@ -269,7 +269,7 @@ return 0;
 	
 
 //calculeaza si returneaza prefixuul cel mai lung pe care cuvantul dat il are in legatura cu orice alt cuvant din trie
-	int myfind_longest_prefix	(Trie *node,char *cuvant,FILE *fileout)	{
+	int myfind_longest_prefix (Trie *node,char *cuvant,FILE *fileout)	{
 		if(node==NULL)	{
 			return 0;
 		}
@@ -300,7 +300,7 @@ return 0;
 
 
 //calculeaza lungimea medie a cuvintelor din trie care incep cu un anumit cuvant
-	int mymean_length		(Trie *node,char *word,char**toprint,unsigned int i,float *rezult,int *nr){ 
+	int mymean_length (Trie *node,char *word,char**toprint,unsigned int i,float *rezult,int *nr){ 
 		if(node==NULL)	{
 			return 0;
 		}		
@@ -514,4 +514,4 @@ int myeliberate	(Trie**node){
 		
 		return 0;
 	}
-//sfarsit +memorie....
+//sfarsit 
