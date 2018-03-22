@@ -1,0 +1,27 @@
+***************************
+*                         *
+*     TEMA 3 POO MAZE     *
+*   PETICILA CONSTANTIN   *
+*        321 CB           *
+***************************
+Pentru aceasta tema am folosit o clasa abstrancta Cell,care reprezenta tipul celulelor din labirint.
+In functie de tipul celulei labirintului,pentru fiecare am creat un obiect al uneia dintre clasele care mostenesc clasa abstracte Cell.
+La creare am inconjurat labirintul de un al tip de celule in care eroul nu are voie sa ajunga.
+*********
+* TASK1 *
+*********
+Pentru realizarea taskului 1 am facut o metoda in care pentru celula curenta in care se afla eroul ii pun pe vecinii catre care ar putea merge eroul(folosindu-ma de exceptiile aruncate) intr-un arraylist apoi,in functie de directia acestora le actualizez si eu directia.
+Folosesc clasa Sort pentru a compara vecinii,prioritate avand cei care au fost vizitati de cele mai putine ori,iar in caz de egalitate cei din dreapta.
+Dupa sortare mut eroul in noua celula si actualizez numarul de vizite si trec in lista drum si celula in care am fost.
+Reiau acesti pasi pana dau de portalul de iesire.
+La final,afisez lungimea drumului si liniile si coloane specifice celulelor prin care am trecut
+*********
+* TASK2 *
+*********
+Pentru acest task am implementat in mare parte algortimul LEE.
+Pentru aceasta am realizat variabila parinte in tipul celula pentru a lega intre ele celulele ce constituiesc drumul.
+Pentru inceput am pus intr-o coada prima celula si am marcat o ca vizitata (i-am setat tipul #-specific zidului)
+Apoi am verificat daca am ajuns la portalul de iesire iar apoi pentru vecinii pentru care exceptiile ne-au dat voie,am setat parintele celula curenta,le-am marcat ca vizitate si le-am adaugat in coada.
+APoi,pentru afisare,mergand de la final pana la prima celula,de la celula fiu la parinte,am pus mereu intr-un arraylist iar apoi am scris in fisier liniile si coloanele celulelor din lista
+
+
